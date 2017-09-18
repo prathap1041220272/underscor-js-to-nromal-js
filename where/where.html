@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+</head>
+
+<body>
+	<p id='demo'></p>
+    <script>
+    (function() {
+        let person = [{ name: "prathap", age: 24 },
+            { name: "pspk", age: 24 },
+            { name: "srk", age: 56 }
+        ];
+
+        var found = _.where(person, { age: 24 });
+
+        console.log(found);
+    }());
+    </script>
+</body>
+
+</html>
