@@ -3,12 +3,12 @@
 	const b = document.querySelector("#n");
 	const c = document.querySelector("#u");
 
-	let number = [1,2,3,4,5,6];
+	let number = [[1,3,2],[1,5,2,7]];
 	a.innerText = JSON.stringify(number);
 
-	const no = _.reject(number,function(num){ return num % 2 == 0 ;});
+	const no = _.invoke(number,'sort');
 	c.innerText = JSON.stringify(no);
 
-	const numb = number.filter(function(number){return (number % 2 !== 0) ;});
+	const numb = number.sort();
 	b.innerText = JSON.stringify(numb);
 }())

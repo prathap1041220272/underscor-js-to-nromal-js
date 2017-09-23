@@ -7,7 +7,7 @@
         { author: "prathap", year : 1995 },
         { author: "pspk", year : 1894 }
     ];
-
+a.innerText = JSON.stringifu(listOfPlays);
 
     const wher = _.where(listOfPlays, { author: "prathap", });
     c.innerText = JSON.stringify(wher);
