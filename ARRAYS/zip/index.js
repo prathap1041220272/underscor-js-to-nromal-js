@@ -16,12 +16,11 @@ c.innerText = JSON.stringify(no);
 
 
 
-for(;name[i];){
-	
-txt += name[i]+" "+numbers[i]+" "+boolean[i] +" ";
-	
-		i++;
-}
+function zip(name, i) {
+        return [name, numbers[i],boolean[i]];
+    }
 
-b.innerText = JSON.stringify(txt);
+    const n = name.map(zip);
+
+b.innerText = JSON.stringify(n);
 }())
