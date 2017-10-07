@@ -5,12 +5,14 @@
 
 
 let numbers = [2,4,7,8];
-a.innerText = JSON.stringify(numbers,function());
+a.innerText = JSON.stringify(numbers);
 
-const no = _.findIndex(numbers, 7);
+const no = _.findIndex(numbers, num);
 c.innerText = JSON.stringify(no);
 
-
-// const n = numbers.indexOf(7);
-// b.innerText = JSON.stringify(n);
+function num(value) {
+	return value === 7
+}
+const n = numbers.findIndex(num);
+b.innerText = JSON.stringify(n);
 }())

@@ -3,7 +3,7 @@
 	const b = document.querySelector("#normaljs");
 	const c = document.querySelector("#underscore");
 
-	let numbers = [1,2,3,4,5];
+	let numbers = [1,2,3,4,5,6];
 	a.innerText = JSON.stringify(numbers);
 
 	const no = _.filter(numbers,function(num){ return num % 2 == 0;});

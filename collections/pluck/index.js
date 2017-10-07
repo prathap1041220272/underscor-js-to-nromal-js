@@ -3,7 +3,7 @@
 	const b = document.querySelector("#n");
 	const c = document.querySelector("#u");
 
-	let person =  [{name: 'prathap', age: 24}, {name: 'n', age: 50}, {name: 'c', age: 60}];;
+	let person =  [{name: 'prathap', age: 24}, {name: 'n', age: 50}, {name: 'c', age: 60}];
 	a.innerText = JSON.stringify(person);
 
 	const no = _.pluck(person,'name');

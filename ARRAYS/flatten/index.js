@@ -3,13 +3,17 @@
 	const b= document.querySelector("#n");
 	const c= document.querySelector("#u");
 
-let numbers =[[6],[5],[4],[3],[2,[[[1]]]]];
+let numbers =[[6],[5],[4],[3],[2,1]];
 a.innerText = JSON.stringify(numbers);
 
 const no = _.flatten(numbers);
 c.innerText = JSON.stringify(no);
 
 
-const numb =[... numbers];
-b.innerText = JSON.stringify(numb);
+const num =numbers.reduce(function(a,b){
+	return b.concat(a);
+
+});
+const num1 =[].concat(...num);
+b.innerText = JSON.stringify(num);
 }())

@@ -16,4 +16,4 @@ for ( i = 0; i < details.length; i++) {
 }
 
 	b.innerText = JSON.stringify(n);
-}()) 9966125952
+}())
